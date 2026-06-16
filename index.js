@@ -11,8 +11,8 @@ module.exports = function (controller) {
         // Pn:P     -> Probe active
         // Pn:XYZP  -> Probe and other inputs active
 
-        if (status && status.pn) {
-            probeClosed = status.pn.includes('P');
+        if (status && status.activePins) {
+            probeClosed = status.activePins.includes('P');
         }
 
         const indicator = document.getElementById('probe-indicator');
