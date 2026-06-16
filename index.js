@@ -30,12 +30,13 @@ module.exports = function (controller) {
         }
     };
 
+//    controller.on('status', (status) => {
+//        updateProbeState(status);
+//    });
+//};
+
     controller.on('status', (status) => {
+        console.log('STATUS EVENT', status);
         updateProbeState(status);
     });
 };
-
-
-controller.on('status', (status) => {
-    console.log(status);
-});
