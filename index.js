@@ -34,3 +34,8 @@ module.exports = function (controller) {
         updateProbeState(status);
     });
 };
+
+
+controller.on('status', (status) => {
+    console.log(status);
+});
