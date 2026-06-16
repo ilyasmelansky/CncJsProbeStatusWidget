@@ -1,0 +1,6 @@
+{
+  "name": "probe-status-widget",
+  "version": "1.0.0",
+  "description": "Displays GRBL probe state",
+  "main": "index.js"
+}
